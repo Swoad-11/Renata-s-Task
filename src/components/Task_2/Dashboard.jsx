@@ -4,7 +4,7 @@ import Header from "./Header";
 import LineChart from "./LineChart";
 import PieChart from "./PieChart";
 
-function DashboardContent({ data }) {
+function Dashboard({ data }) {
   return (
     <div className="pt-12 p-4 bg-gray-50 min-h-screen">
       <Header />
@@ -24,4 +24,4 @@ function DashboardContent({ data }) {
   );
 }
 
-export default DashboardContent;
+export default Dashboard;

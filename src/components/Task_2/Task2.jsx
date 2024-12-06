@@ -1,4 +1,4 @@
-import DashboardContent from "./dashboard";
+import Dashboard from "../Task_2/Dashboard";
 import Sidebar from "./Sidebar";
 import { dataset_task2 } from "../../assets/data";
 import { useState } from "react";
@@ -23,7 +23,7 @@ const Task2 = () => {
     <div className="flex">
       <Sidebar />
       <div className="flex-grow flex flex-col">
-        <DashboardContent data={filteredData} />
+        <Dashboard data={filteredData} />
       </div>
     </div>
   );
