@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -17,7 +17,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/task2"
+                to="/dashboard"
                 className="block py-2 px-3 text-gray-200 rounded hover:bg-gray-700"
               >
                 Task-2
