@@ -20,9 +20,9 @@ const Task2 = () => {
   });
 
   return (
-    <div className=" dashboard-container flex">
+    <div className="flex">
       <Sidebar />
-      <div className="main-content flex-grow flex flex-col">
+      <div className="flex-grow flex flex-col">
         <DashboardContent data={filteredData} />
       </div>
     </div>
