@@ -1,16 +1,25 @@
 import Dashboard from "../Task_2/Dashboard";
 import Sidebar from "./Sidebar";
-import { dataset_task2 } from "../../assets/data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Task2 = () => {
+  let apiEndpoint = "users";
+  const [data, setData] = useState([]);
   const [filters, setFilters] = useState({
     division: "",
     gender: "",
     maritalStatus: "",
   });
 
-  const filteredData = dataset_task2.filter((item) => {
+  useEffect(() => {
+    fetch("https://renata-s-task-backend.vercel.app/api/users")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
+  const filteredData = data.filter((item) => {
     return (
       (filters.division === "" || item.Division === filters.division) &&
       (filters.gender === "" || item.Gender === filters.gender) &&
@@ -18,10 +27,10 @@ const Task2 = () => {
         item.MaritalStatus === filters.maritalStatus)
     );
   });
-
+  console.log(filters);
   return (
     <div className="flex">
-      <Sidebar />
+      <Sidebar filters={filters} setFilters={setFilters} />
       <div className="flex-grow flex flex-col">
         <Dashboard data={filteredData} />
       </div>

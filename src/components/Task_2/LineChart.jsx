@@ -19,7 +19,7 @@ const LineChart = ({ data }) => {
     labels: ageGroups.map((age) => `${age}-${age + 9}`),
     datasets: [
       {
-        label: "Average Income",
+        label: "Average Income Based on Age",
         data: incomeByAgeGroup,
         fill: false,
         borderColor: "#4BC0C0",
