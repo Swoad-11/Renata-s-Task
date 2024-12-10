@@ -10,7 +10,7 @@ function Sidebar({ filters, setFilters, isSidebarOpen, toggleSidebar }) {
         id="default-sidebar"
         className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } sm:translate-x-0 bg-gray-50 dark:bg-gray-800`}
+        } sm:translate-x-0 bg-gray-800`}
         aria-label="Sidebar"
       >
         <button
