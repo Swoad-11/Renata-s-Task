@@ -22,7 +22,14 @@ const BarChart = ({ data }) => {
     ],
   };
 
-  return <Bar data={chartData} />;
+  return (
+    <>
+      <h1 className="font-bold text-center mb-8">
+        Average Income Based on Divisions
+      </h1>
+      <Bar data={chartData} />
+    </>
+  );
 };
 
 export default BarChart;

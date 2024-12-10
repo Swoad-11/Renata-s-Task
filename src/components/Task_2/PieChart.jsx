@@ -46,7 +46,12 @@ const PieChart = ({ data }) => {
     },
   };
 
-  return <Pie data={chartData} options={options} />;
+  return (
+    <>
+      <h1 className="font-bold text-center mb-8">Male vs Female</h1>
+      <Pie data={chartData} options={options} />
+    </>
+  );
 };
 
 export default PieChart;

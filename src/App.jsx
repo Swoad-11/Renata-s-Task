@@ -6,12 +6,9 @@ import Task2 from "./components/Task_2/Task2";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route element={<Task1 />} path="/" />
-      </Routes>
-      <Routes>
-        <Route element={<Task2 />} path="/dashboard" />
+        <Route path="/" element={<Task1 />} />
+        <Route path="/dashboard" element={<Task2 />} />
       </Routes>
     </>
   );
