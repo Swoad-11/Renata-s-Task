@@ -1,6 +1,6 @@
-# Interactive Dashboard
+# Assignment
 
-This project is a React-based dashboard with a filterable dataset and a dynamic pie chart displaying gender-based statistics. The goal is to create an interactive and user-friendly interface for exploring and visualizing data.
+This project is a React-based assignment which is combined of two tasks where Task-1 will show 2 charts based on given data and Task-2 is an interactive dashboard with a filterable dataset and a dynamic pie chart displaying gender-based statistics. Both tasks are responsive.
 
 ## Routing
 

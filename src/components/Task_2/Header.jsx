@@ -1,7 +1,7 @@
 function Header() {
   return (
-    <div className="header bg-gray-100 p-4 flex justify-between items-center shadow mb-4">
-      <div className="flex items-center p-2 text-gray-900 rounded-lg">
+    <div className="header bg-gray-100 p-4 flex flex-col md:flex-row justify-between items-center shadow mb-4">
+      <div className="flex items-center p-2 text-gray-900 rounded-lg mb-2 md:mb-0">
         <svg
           className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
           aria-hidden="true"
@@ -18,9 +18,9 @@ function Header() {
         <input
           type="text"
           placeholder="Search"
-          className="border rounded px-2 py-1"
+          className="border rounded px-2 py-1 w-full md:w-auto"
         />
-        <button className="bg-blue-500 text-white px-4 py-1 rounded">
+        <button className="bg-blue-500 text-white px-4 py-1 rounded mt-2 md:mt-0">
           Notifications
         </button>
       </div>
