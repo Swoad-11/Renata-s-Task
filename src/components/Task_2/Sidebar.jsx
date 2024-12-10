@@ -37,7 +37,7 @@ function Sidebar({ filters, setFilters, isSidebarOpen, toggleSidebar }) {
                 ></path>
               </svg>
             </div>
-            <h2 className="text-xl font-semibold text-center text-gray-800 dark:text-gray-100">
+            <h2 className="text-xl font-semibold text-center text-gray-100">
               Admin
             </h2>
           </div>
